@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <title>Bubble Tea 🧋</title>
+    
+  </head>
+  <body>
+    <div class="bubble-tea">
+
+      <h1>I LOVE BUBBLE TEA 🧋!</h1>
+      <h2>Anytime a day 😄!</h2>
+      <hr class="line" />
+      <img
+        src="https://cdn.ordermo.ph/photos/resto/eufrsFSt/cover.jpg?v=1633771599550"
+        alt="Bubble Tea"
+        width="500"
+        class="bubble-tea-image"
+      />
+
+      <hr class="line" />
+
+      <div class="origin">
+        <p>
+          <strong> Bubble tea </strong> also known as
+          <strong>
+            pearl milk tea, bubble milk tea, tapioca milk tea, boba tea, or boba
+          </strong>
+          is a tea-based drink that originated in Taiwan in the<em>
+            early 1980s</em
+          >. It most commonly consists of tea accompanied by chewy tapioca balls
+          ("boba" or "pearls"), but it can be made with other toppings as well
+          such as grass jelly, aloe vera, red bean, etc.
+
+          <br>
+          <br>
+
+          Bubble tea has many varieties and flavors, but the two most popular
+          varieties are
+          <span class="popular"> black pearl milk tea and green pearl milk tea </span> ("pearl"
+          signifies the tapioca balls at the bottom).
+        </p>
+        <br>
+
+        <a href="https://en.wikipedia.org/wiki/Bubble_tea#Toppings" target="_blank" class="link" > Read More on Wikipedia</a>
+      </div>
+
+      <div class="how-to-order">
+        <h3>STEPS TO ORDER BUBBLE TEA</h3>
+
+        <ol>
+          <li class="steps">
+            <h4>Size </h4>
+            <p class="step"> S, M or L</p>
+          </li>
+
+          <li  class="steps">
+             <h4>Temperature</h4>
+              <p class="step">Hot or Cold</p>
+
+          </li>
+
+          <li class="steps">
+             <h4>Sweetness</h4>
+              <p class="step">From 100% to 0% sweet</p>
+          </li>
+
+          <li class="steps">
+            <h4>Toppings</h4>
+            <p class="step">Tapioca pearls with flavours or fruit jelly</p>
+          </li>
+          </div>
+        </ol>
+
+        <br>
+        <button>TRY BUBBLE TEA</button>
+
+      </div>
+    
+    </div>
+
+    <script>
+
+      function tryBubbleTea(){
+        let name =prompt("What's your name?");
+        let like = prompt("Do you like bubble tea 🧋?");
+
+        like = like.toLowerCase();
+        like = like.trim();
+        like = like.replace("ye", "yes");
+
+        if (like === "yes"){
+          alert("Hi" + " " + name + "! WE LOVE BUBBLE TEA 🧋. Go drink some boba and hope you have a great day 😄!");
+        } else{
+          alert("Hi" + " " + name+"! I LOVE BUBBLE TEA 🧋. I recommend it to you. But if you don't like it, it's okay. Hope you have a great day 😄!");
+        }
+      }
+
+      let tryBubbleTeaButton=document.querySelector("button");
+      tryBubbleTeaButton.addEventListener("click", tryBubbleTea);
+
+    </script>
+  </body>
+</html>
+
